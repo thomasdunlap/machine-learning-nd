@@ -2,7 +2,7 @@
 
 This is the repository for all of my Nanodegree projects.  I will provide links below as I complete them:
 
-* [Titanic Survival Exploration](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/titanic_survival_exploration)
+* [Titanic Survival Exploration](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/titanic_survival_exploration) (In Progress)
 
 Content for Udacity's Machine Learning curriculum, which includes projects and their descriptions.
 
