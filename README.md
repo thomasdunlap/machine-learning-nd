@@ -3,7 +3,8 @@
 This is the repository for all of my Nanodegree projects.  I will provide links below as I complete them:
 
 * [Titanic Survival Exploration](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/titanic_survival_exploration)
-* [Boston Housing Prices](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/boston_housing) (In Progress)
+* [Boston Housing Prices](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/boston_housing)
+* [Student Intervention System](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/student_intervention)
 
 Content for Udacity's Machine Learning curriculum, which includes projects and their descriptions.
 
