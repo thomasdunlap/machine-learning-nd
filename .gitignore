@@ -63,3 +63,8 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# Large files
+*.p
+*.gz
+cifar-10-batches-py/
