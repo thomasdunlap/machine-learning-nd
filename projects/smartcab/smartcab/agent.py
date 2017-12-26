@@ -3,6 +3,7 @@ import math
 from environment import Agent, Environment
 from planner import RoutePlanner
 from simulator import Simulator
+from operator import itemgetter
 
 class LearningAgent(Agent):
     """ An agent that learns to drive in the Smartcab world.
@@ -82,8 +83,8 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Calculate the maximum Q-value of all actions for a given state
-
-        maxQ = None
+        nowQ = self.Q[self.state]
+        maxQ = max(nowQ.iteritems(), key=itemgetter(1))[1]
 
         return maxQ
 
