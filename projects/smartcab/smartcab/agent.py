@@ -106,7 +106,7 @@ class LearningAgent(Agent):
                     "right": 0,
                     "forward": 0
                 }
-                
+
         return
 
 
@@ -117,7 +117,6 @@ class LearningAgent(Agent):
         # Set the agent state and default action
         self.state = state
         self.next_waypoint = self.planner.next_waypoint()
-        action = None
 
         ###########
         ## TO DO ##
@@ -126,6 +125,22 @@ class LearningAgent(Agent):
         # When learning, choose a random action with 'epsilon' probability
         # Otherwise, choose an action with the highest Q-value for the current state
         # Be sure that when choosing an action with highest Q-value that you randomly select between actions that "tie".
+        if not self.learning:
+            action = random.choice(self.valid_actions)
+        else:
+            rand = random.random()
+            if rand <= self.epsilon:
+                action = random.choice(self.valid_actions)
+            else:
+                maxQ = self.get_maxQ(state)
+                actions = []
+
+                for act in self.valid_actions:
+                    if self.Q[state][act] == maxQ:
+                        actions.append(act)
+
+                action = random.choice(actions)
+
         return action
 
 
