@@ -5,7 +5,7 @@ This is the repository for all of my Nanodegree projects.  I will provide links 
 * [Titanic Survival Exploration](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/titanic_survival_exploration): Data exploration with Numpy and Pandas.
 * [Predicting Boston Housing Prices](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/boston_housing): Analyze Boston Housing market data with decision tree.
 * [Building a Student Intervention System](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/student_intervention): Analyze multiple algorithms to find the best one. (In Progress)
-* [Creating Customer Segments](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/customer_segments): (In Progress)
+* [Creating Customer Segments](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/customer_segments): GMM clustering algorithm with PCA. (In Progress)
 * [Train a SmartCab to Drive](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/smartcab): Train a simulated cab to drive with reinforcement learning. (In Progress)
 * [TensorFlow CIFAR-10 Image Classification](https://github.com/thomasdunlap/machine-learning-nd/tree/master/projects/image-classification): Create an image classifier with TensorFlow. (In Progress)
 
