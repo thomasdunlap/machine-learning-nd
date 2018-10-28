@@ -49,7 +49,7 @@ class LearningAgent(Agent):
                 self.epsilon = 0
             self.trial += 1
             self.epsilon = math.fabs(math.cos(self.alpha*self.trial))
-        return
+        return None
 
     def build_state(self):
         """ The build_state function is called when the agent requests data from the
@@ -72,6 +72,9 @@ class LearningAgent(Agent):
 
         # Set 'state' as a tuple of relevant data for the agent
         state = (waypoint, inputs["light"], inputs["left"], inputs["oncoming"])
+
+        if self.learning:
+            self.Q[state] = self.Q.get(state, {None:0.0, "forward":0.0, "left":0.0, "right":0.0})
 
         return state
 
