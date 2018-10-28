@@ -24,6 +24,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set any additional class parameters as needed
+        random.seed(1)
 
 
     def reset(self, destination=None, testing=False):
@@ -47,7 +48,7 @@ class LearningAgent(Agent):
             if self.trial > 200:
                 self.epsilon = 0
             self.trial += 1
-
+            self.epsilon = math.fabs(math.cos(self.alpha*self.trial))
         return
 
     def build_state(self):
