@@ -73,8 +73,10 @@ class LearningAgent(Agent):
         # Set 'state' as a tuple of relevant data for the agent
         state = (waypoint, inputs["light"], inputs["left"], inputs["oncoming"])
 
-        if self.learning:
-            self.Q[state] = self.Q.get(state, {None:0.0, "forward":0.0, "left":0.0, "right":0.0})
+        if self.learning and state not in self.Q.keys():
+            #self.Q[state] = self.Q.get(state, {None:0.0, "forward":0.0, "left":0.0, "right":0.0})
+        
+            self.createQ(state)
 
         return state
 
